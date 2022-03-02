@@ -59,6 +59,7 @@ COMMAND | CONVERSION
 ```bash
 sudo update-ca-certificates
 ```
+Refer the documentation [here](https://wiki.debian.org/Self-Signed_Certificate) and [here.](https://manpages.debian.org/buster/ca-certificates/update-ca-certificates.8.en.html)
 
 ### On Arch
 System-wide – Arch(p11-kit)
@@ -74,9 +75,7 @@ trust anchor --store myCA.crt
 ```bash 
 update-ca-trust
 ```
-
-
-Refer the documentation [here](https://wiki.debian.org/Self-Signed_Certificate) and [here.](https://manpages.debian.org/buster/ca-certificates/update-ca-certificates.8.en.html)
+wiki page  [here](https://wiki.archlinux.org/title/User:Grawity/Adding_a_trusted_CA_certificate)
 
 ### On Fedora
 - Move the CA certificate (`ca.pem`) to `/etc/pki/ca-trust/source/anchors/ca.pem` or `/usr/share/pki/ca-trust-source/anchors/ca.pem`
